@@ -1,0 +1,22 @@
+[package]
+name = "kvs"
+version = "0.1.0"
+authors = ["Patrick O'Dacre <patrick@patrickwho.me>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+thiserror = "1.0.48"
+
+[dev-dependencies]
+anyhow = "1.0.75"
+
+[lib]
+test = false
+doctest = false
+
+[[bin]]
+name = "kvs"
+test = false
+doctest = false
