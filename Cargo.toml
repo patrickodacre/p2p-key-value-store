@@ -8,6 +8,8 @@ edition = "2021"
 
 [dependencies]
 thiserror = "1.0.48"
+assert_cmd = "2.0.12"
+predicates = "3.0.4"
 
 [dev-dependencies]
 anyhow = "1.0.75"
