@@ -9,9 +9,3 @@ pub enum KvsError {
     #[error("Entry not found: {0}")]
     NotFound(String),
 }
-
-impl From<IoError> for KvsError {
-    fn from(e: IoError) -> Self {
-        KvsError::Generic("io error".to_string())
-    }
-}
